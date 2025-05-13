@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potho feed Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar bg-body-tertiary p sticky-top">
+<div class="container-fluid d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center gap-2">
+    <i class="fa-brands fa-instagram" style = "font-size: 2rem;"></i>
+    <a class="navbar-brand" style ="font-size: 2rem;" >Instagram</a>
+</div>
+    <div class="d-flex align-items-center gap-2">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Create a new post
+</button>       
+    <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-gear"></i>
+</button>
+    <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><a class="dropdown-item" href="#">Accessibility</a></li>
+    <li><a class="dropdown-item" href="#">Privacy and Data</a></li> <!--revisar-->
+    <hr class="dropdown-divider">
+    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>            
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+    <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+    <div class="modal-body">
+    Caption:
+    <div class="input-group">
+    <textarea class="form-control" aria-label="With textarea"
+    placeholder="Add the caption of your post here"></textarea>
+</div>
+    <div class="d-flex gap-2">
+    <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i class="fa-solid fa-camera"></i></button>
+    <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+</div>
+</div>
+      
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Publish</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--Contenedor de Pestañas (Grid y Lista) -->
+<div class="view-options">
+    <ul class="nav nav-tabs border-0 d-flex justify-content-center mb-3" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+</li>
+    <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+</li>
+</ul>
+</div>
+
+<!-- Paneles de Contenido (Grid y Lista) -->
+<div class="tab-content" id="myTabContent">
+  
+<!-- Panel de Cuadrícula (home-grid) -->
+<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+    <div class=" container">
+    <div class="row g-3">
+
+<!--image 1-->
+<div class="col-md-4">
+    <img src="https://cdn.pixabay.com/photo/2015/12/04/09/13/leaves-1076307_1280.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;">
+    </div>
+
+<!--image 2-->
+<div class="col-md-4">
+    <img src="https://cdn.pixabay.com/photo/2021/10/03/09/12/mushroom-6677376_1280.jpg"  class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;">
+    </div>
+
+<!--image 3-->
+<div class="col-md-4">
+    <img src="https://cdn.pixabay.com/photo/2020/08/11/23/07/cat-5481277_1280.jpg"  class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;">
+    </div>
+
+<!--image 4-->
+<div class="col-md-4">
+    <img src="https://holly.co/assets/images/products/d899edef-0cc2-4e5b-8c3a-57e63915b464-original.webp"  class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;">
+    </div>
+
+<!--image 5-->
+<div class="col-md-4">
+    <img src="https://cdn.pixabay.com/photo/2016/02/13/12/26/christmas-background-1197753_1280.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;">
+    </div>
+
+<!--image 6-->
+<div class="col-md-4">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/03-hobbiton-airbnb-blue-hobbit-hole-credit-larnie-nicolson-1670354665.jpg?resize=980:*"  class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;">
+    </div>
+  
+<!--image 7-->
+<div class="col-md-4">
+    <img src="https://faroutmagazine.co.uk/static/uploads/1/2024/12/ACDC-Logo-ACDC-Power-Up-Album-Cover-2020-Far-Out-Magazine.jpg"  class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;">
+    </div>
+
+<!--image 8-->
+<div class="col-md-4">
+    <img src="https://w0.peakpx.com/wallpaper/122/335/HD-wallpaper-gogeta-blue-dragon-ball-dragon-ball-super-dragon-ball-z-ssgss-super-saiyan-blue-super-saiyan.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;">
+    </div>
+
+<!--image 9-->
+<div class="col-md-4">
+    <img src="https://cdn.pixabay.com/photo/2016/11/23/14/51/stone-circles-1853340_1280.jpg"  class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;">
+</div>
+</div> <!--div classs container-->
+</div>
+</div>
+
+<!-- Panel de Cuadrícula (profile-lista) -->
+<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    
+<!--Tarjeta (Post) 1 inicio-->
+<div class="post-container">
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4 d-flex justify-content-center">
+<div class="card mb-4" style="width: 25rem;">
+<div class="card-items d-flex justify-content-between align-items-center px-2">
+    <span><h5>Páginas que susurran historias</h5></span>
+    <span style="font-size: 10px;">06/10</span>
+</div>
+    <img src="https://cdn.pixabay.com/photo/2015/12/04/09/13/leaves-1076307_1280.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;" alt="post image">
+    <div class="card-body p-2">
+    <p class="mb-0 fw-bold"><strong>700 likes</strong></p>
+    <p class="card-text mb-0 small">Un momento para desconectar, respirar profundo y dejar que las ideas fluyan.Que tu día sea tan cálido y reconfortante como un buen libro y una taza de té. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Tarjeta (Post) 1 final-->
+
+<!--Tarjeta (Post) 2 inicio-->
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4 d-flex justify-content-center">
+<div class="card mb-4" style="width: 25rem;">
+<div class="card-items d-flex justify-content-between align-items-center px-2">
+    <span><h5>Reino Mágico del Bosque</h5></span>
+    <span style="font-size: 10px;">07/12</span></div>
+    <img src="https://cdn.pixabay.com/photo/2021/10/03/09/12/mushroom-6677376_1280.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;" alt="post image">
+    <div class="card-body p-2">
+    <p class="mb-0 fw-bold"><strong>8,500 likes</strong></p>
+    <p class="card-text mb-0 small">A veces, los pequeños detalles esconden grandes misterios. Como este hongo que parece sacado de un cuento de hadas, iluminando el suelo del bosque con su vibrante color. </p>
+</div>
+</div>
+</div>
+</div>
+<!--Tarjeta (Post) 2 final-->
+
+<!--Tarjeta (Post) 3 inicio-->
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4 d-flex justify-content-center">
+<div class="card mb-4" style="width: 25rem;">
+<div class="card-items d-flex justify-content-between align-items-center px-2">
+    <span><h5>Que los gatos negros...</h5> </span>
+    <span style="margin-top: -5px; font-size: 10px;"> 05/07 </span></div> 
+    <img src="https://cdn.pixabay.com/photo/2020/08/11/23/07/cat-5481277_1280.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;" alt="post image">
+    <div class="card-body p-2">
+    <p class="mb-0 fw-bold"><strong>102,350 likes</strong></p>
+    <p class="card-text mb-0 small ">Dan mala suerte... mala suerte es pisar un lego a las 3 de la mañana. Yo solo vigilo tu alma mientras duermes. Nada de qué preocuparse."</p>
+.</p>
+</div>
+</div>
+</div>
+</div>
+<!--Tarjeta (Post) 3 final-->
+
+<!--Tarjeta (Post) 4 inicio-->
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4 d-flex justify-content-center">
+<div class="card mb-4" style="width: 25rem;">
+<div class="card-items d-flex justify-content-between align-items-center px-2">
+    <span><h5>Kintsugi: El arte de sanar con oro</h5></span>
+    <span style="font-size: 10px;"> 02/04 </span></div> 
+    <img src="https://holly.co/assets/images/products/d899edef-0cc2-4e5b-8c3a-57e63915b464-original.webp" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;" alt="post image">
+    <div class="card-body p-2">
+    <p class="mb-0 fw-bold"><strong>2,350 likes</strong></p>  
+    <p class="card-text mb-0 small">Donde otros ven imperfecciones, nosotros vemos historia. Cada grieta es un recordatorio de que incluso lo roto puede ser hermoso, fuerte y único. </p>
+</div>
+</div>
+</div>
+</div>
+<!--Tarjeta (Post) 4 final-->
+
+<!--Tarjeta (Post) 5 inicio-->
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4 d-flex justify-content-center">
+<div class="card mb-4" style="width: 25rem;">
+<div class="card-items d-flex justify-content-between align-items-center px-2">
+    <span><h5>Somos Instantes..</h5></span>
+    <span style="font-size: 10px;">02/06</span></div>
+    <img src="https://cdn.pixabay.com/photo/2016/02/13/12/26/christmas-background-1197753_1280.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;" alt="post image">
+    <div class="card-body p-2">
+    <p class="mb-0 fw-bold"><strong>2,350 likes</strong></p>
+    <p class="card-text mb-0 small">Estamos hechos de polvo de estrellas y páginas de libros.</p>
+</div>
+</div>
+</div>
+</div>
+<!--Tarjeta (Post) 5 final-->
+
+
+<!--Tarjeta (Post) 6 inicio-->
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4 d-flex justify-content-center">
+<div class="card mb-4" style="width: 25rem;">
+<div class="card-items d-flex justify-content-between align-items-center px-2">
+    <span><h5>Bienvenido a la Comarca.</h5></span>
+    <span style="font-size: 10px;">05/08</span></div>
+    <img src="https://hips.hearstapps.com/hmg-prod/images/03-hobbiton-airbnb-blue-hobbit-hole-credit-larnie-nicolson-1670354665.jpg?resize=980:*" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;" alt="post image">
+    <div class="card-body p-2">
+    <p class="mb-0 fw-bold"><strong>6,970 likes</strong></p>
+    <p class="card-text mb-0 small">Porque a veces, el hogar de nuestros sueños tiene puertas redondas, jardines salvajes y una vista al verde infinito.</p>
+</div>
+</div>
+</div>
+</div>
+<!--Tarjeta (Post) 6 final-->
+
+
+<!--Tarjeta (Post) 7 inicio-->
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4 d-flex justify-content-center">
+<div class="card mb-4" style="width: 25rem;">
+<div class="card-items d-flex justify-content-between align-items-center px-2">  
+    <span><h5>Clásicos que nunca mueren</h5></span>
+    <span style="font-size: 10px;">07/10</span></div>
+    <img src="https://faroutmagazine.co.uk/static/uploads/1/2024/12/ACDC-Logo-ACDC-Power-Up-Album-Cover-2020-Far-Out-Magazine.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;" alt="post image">
+    <div class="card-body p-2">
+    <p class="mb-0 fw-bold"><strong> 80,600 likes</strong></p>
+    <p class="card-text mb-0 small">No importa cuántas veces suene, el trueno de AC/DC siempre hace vibrar el alma. Porque algunos riffs nunca envejecen y los solos aún nos dejan sin aliento. </p>
+</div>
+</div>
+</div>
+</div>
+<!--Tarjeta (Post) 7 final-->
+
+
+<!--Tarjeta (Post) 8 inicio-->
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4 d-flex justify-content-center">
+<div class="card mb-4" style="width: 25rem;">
+<div class="card-items d-flex justify-content-between align-items-center px-2">
+    <span><h5>El poder de dos leyendas en uno.</h5></span>
+    <span style="font-size: 10px;">03/04</span></div>
+    <img src="https://w0.peakpx.com/wallpaper/122/335/HD-wallpaper-gogeta-blue-dragon-ball-dragon-ball-super-dragon-ball-z-ssgss-super-saiyan-blue-super-saiyan.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;" alt="post image">
+    <div class="card-body p-2">
+    <p class="mb-0 fw-bold"><strong>1,500,000 likes</strong></p>  
+    <p class="card-text mb-0 small">Cuando dos guerreros se fusionan para romper los límites del poder. Gogeta no es solo una fusión, es la definición de pura destrucción.</p>
+</div>
+</div>
+</div>
+</div>
+<!--Tarjeta (Post) 8 final-->
+
+
+<!--Tarjeta (Post) 9 inicio-->
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4 d-flex justify-content-center">
+<div class="card mb-4" style="width: 25rem;">
+<div class="card-items d-flex justify-content-between align-items-center px-2"> 
+    <span><h5>Escocia</h5></span>
+    <span style="font-size: 10px;">01/06</span></div>
+    <img src="https://cdn.pixabay.com/photo/2016/11/23/14/51/stone-circles-1853340_1280.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;" alt="post image">
+    <div class="card-body p-2">
+    <p class="mb-0 fw-bold"><strong>15,750 likes</strong></p>
+    <p class="card-text mb-0 small">Un lugar donde el viento susurra historias antiguas y las piedras guardan secretos.</p>
+</div>
+</div>
+</div>
+</div>
+<!--Tarjeta (Post) 9 final-->
+
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
